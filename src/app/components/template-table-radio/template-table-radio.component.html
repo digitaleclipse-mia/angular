@@ -1,0 +1,17 @@
+<div>
+    <table class="templateRadioTable">
+        <th *ngFor="let item of titlesRadioTable">
+            <input type="radio" value="{{item.valueRadioTable}}" name="{{item.nameRadioTable}}" title="{{ item.titleRadioTable }}" (click)="changeClass($event.target.title)"/>
+        </th>
+        <tr>
+           <td *ngFor="let item of titlesRadioTable" class="title" >
+            {{ item.titleRadioTable }}
+           </td>
+        </tr>
+        <tr>
+            <td *ngFor="let item of titlesRadioTable" class="contentColumn" [attr.title]="item.titleRadioTable">
+             {{ item.contentRadioTable }}
+            </td>
+         </tr>
+    </table>
+</div>

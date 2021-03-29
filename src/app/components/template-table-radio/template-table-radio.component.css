@@ -1,0 +1,82 @@
+.templateRadioTable{
+    border: 1px solid #cbdaf0;
+    border-collapse: collapse;
+}
+
+.templateRadioTable input[type="radio"] {
+    /* remove standard background appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* create custom radiobutton appearance */
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    padding: 1.5px;
+    /* background-color only for content */
+    background-clip: content-box;
+    border: 2px solid #bbbbbb;
+    /*background-color: #cb4d62;*/
+    border-radius: 50%;
+}
+
+.templateRadioTable input[type="radio"]:focus,
+.templateRadioTable input[type="radio"]:checked{
+    background-color: #cb4d62;
+    outline: none;
+}
+
+.templateRadioTable td{
+    text-align: center;
+}
+
+.templateRadioTable th{
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    padding:16px;
+    width: 25%;
+}
+
+.title{
+    background: #cbdaf0;
+    padding: 18px;
+    color: #666769;
+    font-family: "Helvetica";
+    font-size: 1.2em;
+    font-weight: 500;
+    border-right: 1px solid #fff;
+}
+
+.titleActive{
+    background-color: #cb4d62;
+    color:#fff;
+    border-bottom: 1px solid #fff;
+}
+
+.contentColumn{
+    padding: 30px;
+    color: #666769;
+    font-family: "Helvetica";
+    font-size: 1.2em;
+    font-weight: 100;
+    border-left: 1px solid #cbdaf0;
+}
+
+.contentActive{
+    background: #c26b6a;
+    color: #fff;
+    border-top: 1px solid #fff;
+}
+
+@media(max-width:500px){
+    .title{
+        padding: 10px;
+        font-size: 0.7em;
+    }
+
+    .contentColumn{
+        padding: 6px;
+        font-size: 0.7em;
+    }
+}

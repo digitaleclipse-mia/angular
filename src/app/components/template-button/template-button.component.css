@@ -1,0 +1,42 @@
+.btn-template{
+    font-size: 2em;
+    padding: 14px 60px 14px 60px;
+    border-radius: 10px;
+    border-color: transparent;
+    color: #fff;
+    background: red;
+    font-family: "Helvetica";
+    cursor: pointer;
+}
+
+.btn-template:active{
+    border-color: transparent;
+}
+
+.btn-template:focus{
+    outline: none;
+}
+
+.btn-template:target{
+    border-color: transparent;
+}
+
+.blue-btn{
+    background: blue;
+}
+
+.green-btn{
+    background: green;
+}
+
+.yellow-btn{
+    background: yellow;
+}
+
+.orange-btn{
+    background: orange;
+}
+
+.black-btn{
+    background: black;
+}
